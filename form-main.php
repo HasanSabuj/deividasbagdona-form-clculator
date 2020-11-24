@@ -159,3 +159,4 @@ function max_form_shortcode( $atts ){
 }
 add_shortcode( 'form-calculator', 'max_form_shortcode' );
 
+/* I'm from branch Rana */
