@@ -18,7 +18,6 @@ function form_script_file() {
 
 add_action( 'wp_enqueue_scripts','form_script_file');
 
-
 require_once("form_functions.php");
 
 //Register single Shostcode
@@ -160,3 +159,4 @@ function max_form_shortcode( $atts ){
 }
 add_shortcode( 'form-calculator', 'max_form_shortcode' );
 
+/* I'm from branch Rana */
