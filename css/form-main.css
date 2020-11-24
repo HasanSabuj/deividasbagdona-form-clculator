@@ -1,0 +1,135 @@
+
+/*
+body {
+    font-family: montserrat, arial, verdana;
+    background: transparent;
+}
+*/
+
+/*---------- Responsive Grid------ */
+
+[class*="f_col_"] {
+  float: left;
+  padding: 10px;
+}
+
+
+.form_row{
+	margin-left:-10px;
+	margin-right:-10px;
+}
+.form_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.f_col_1 {width: 8.33%;}
+.f_col_2 {width: 16.66%}
+.f_col_3 {width: 25%;}
+.f_col_4 {width: 33.33%;}
+.f_col_5 {width: 41.66%;}
+.f_col_6 {width: 50%;}
+.f_col_7 {width: 58.33%;}
+.f_col_8 {width: 66.66%;}
+.f_col_9 {width: 75%;}
+.f_col_10 {width: 83.33%;}
+.f_col_11 {width: 91.66%;}
+.f_col_12 {width: 100%;}
+
+.form_area {
+    margin-bottom: 50px;
+    box-shadow: 3px 1px 16px -3px #ddd;
+    padding: 20px;
+}
+.form_area .form_group input, .form_area .form_group select {
+    background: #f3f3f3;
+    border-color: #214f71;
+}
+input#apply_btn {
+    margin-top: 15px;
+    background: #f77d16;
+    border-color: #fb8d30;
+    color: #fff;
+    font-weight: 500;
+}
+input#apply_btn:hover {
+    background: #214f71;
+    border-color: #214f71;
+}
+.form_area .form_group input:focus, .form_area .form_group select:focus{
+border-color:#fb8d30;	
+}
+input#apply_btn:focus {
+    border: none;
+    outline: none;
+}
+
+.form_area input[type="number"]::-webkit-outer-spin-button, 
+.form_area input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form_area input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+.form_row label {display: block;font-weight: 700;font-size: 16px;float: none;line-height: 1.3;margin: 0 0 4px 0;padding: 0;}
+
+.radio_row label{
+	float: left;margin-right: 10px;padding-top: 6px;
+}
+span.redio-group label {
+    font-weight: normal;
+    display: inline-block;
+}
+
+.form_area {
+    margin-bottom: 50px;
+}
+.submit_row{
+	text-align:center;
+}
+
+/*radio*/
+.form_group{}
+.form_group .radio-group{}
+.form_group .radio-group label {
+    font-weight: normal;
+    display: inline-block;
+    padding: 7px 10px;
+    margin-right: 10px;
+    border: 1px solid #fb8d30;
+    cursor:pointer;
+    transition: .3s;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background: #f77d16;
+    color: #fff;
+    font-weight: 500;
+}
+.form_group .radio-group input {
+    display: none;
+}
+.radio-group input:checked + label{
+    background: #214f71;
+    color: #fff;
+    border-color: #26587d;
+}
+
+/*radio end*/
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+	.f_col_6, .f_col_4, .f_col_8{
+		width:100%;
+		float:none;
+	}
+}
